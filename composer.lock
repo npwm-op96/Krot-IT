@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52cfe9f71c31c598812b5f7f24b2d0a3",
+    "content-hash": "0fe1f097b241d602ac3d9dc43ad07f4e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -801,6 +801,102 @@
                 "source": "https://github.com/guzzle/psr7/tree/2.0.0"
             },
             "time": "2021-06-30T20:03:07+00:00"
+        },
+        {
+            "name": "infyomlabs/laravel-generator-helpers",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/InfyOmLabs/laravel-generator-helpers.git",
+                "reference": "3312c415abf79ae5eac2002b3e32072533049fcc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/InfyOmLabs/laravel-generator-helpers/zipball/3312c415abf79ae5eac2002b3e32072533049fcc",
+                "reference": "3312c415abf79ae5eac2002b3e32072533049fcc",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0",
+                "php": "^7.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "InfyOm\\GeneratorHelpers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mitul Golakiya",
+                    "email": "me@mitul.me"
+                }
+            ],
+            "description": "Helper functions for laravel generator packages",
+            "support": {
+                "issues": "https://github.com/InfyOmLabs/laravel-generator-helpers/issues",
+                "source": "https://github.com/InfyOmLabs/laravel-generator-helpers/tree/v3.0.0"
+            },
+            "time": "2020-09-13T04:41:04+00:00"
+        },
+        {
+            "name": "infyomlabs/laravel-ui-coreui",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/InfyOmLabs/laravel-ui-coreui.git",
+                "reference": "cd3a34840b42fba4099ceceb39f87f62b1c7e790"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/InfyOmLabs/laravel-ui-coreui/zipball/cd3a34840b42fba4099ceceb39f87f62b1c7e790",
+                "reference": "cd3a34840b42fba4099ceceb39f87f62b1c7e790",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0",
+                "infyomlabs/laravel-generator-helpers": "^3.0",
+                "laravel/ui": "^3.0",
+                "php": "^7.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "InfyOm\\CoreUIPreset\\CoreUIPresetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "InfyOm\\CoreUIPreset\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mitul Golakiya",
+                    "email": "me@mitul.me"
+                }
+            ],
+            "description": "Laravel frontend preset for CoreUI Theme",
+            "keywords": [
+                "coreui",
+                "laravel",
+                "preset"
+            ],
+            "support": {
+                "issues": "https://github.com/InfyOmLabs/laravel-ui-coreui/issues",
+                "source": "https://github.com/InfyOmLabs/laravel-ui-coreui/tree/v3.0.0"
+            },
+            "time": "2020-09-13T05:16:08+00:00"
         },
         {
             "name": "laravel/framework",
