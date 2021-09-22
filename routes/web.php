@@ -32,3 +32,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/admin/user', [App\Http\Controllers\UserController::class, 'index']);
+Route::get('/admin/user/getalluser', [App\Http\Controllers\UserController::class, 'getalluser'])->name('admin.user.getalluser');
