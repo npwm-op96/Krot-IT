@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Providers;
-
+use App\Repository\IInventoryRepository;
+use App\Repository\InventoryRepository;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +14,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(IInventoryRepository::class, InventoryRepository::class);
+
     }
 
     /**

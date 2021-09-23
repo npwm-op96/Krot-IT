@@ -1,25 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-<style>
-    .paginate_button {
-        z-index: 3;
-    color: #fff;
-    border-radius: 30px !important;
-    background-color: #321fdb ;
-    border-color: #321fdb;
-    }
-</style>
 <div class="container-fluid">
     <div class="card-header">
-        <h1 class="text-black-50">Table User</h1>
+        <h1 class="text-black-50">Table Inventory</h1>
         <div class="card">
-        <table id="Usertable" class="table table-bordered ">
+        <table id="Inventorytable" class="table table-bordered ">
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Name</th>
-                        <th>Email</th>
+                        <th>ID</th>
+                        {{-- <th>Email</th> --}}
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -29,10 +20,10 @@
         </div>
     </div>
 </div>
+@endsection
+@section('third_party_scripts')
 <script>
-
-
+    var url = "{{route('admin.inventory.getall')}}";
 </script>
-
-
+<script src="{{ asset('js/inventory/inventory.js') }}" defer></script>
 @endsection

@@ -36,6 +36,22 @@
             <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/tooltips.html"><span class="c-sidebar-nav-icon"></span> Tooltips</a></li>
         </ul>
     </li>
+    <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+            <svg class="c-sidebar-nav-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
+            </svg> User</a>
+        <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{ route('admin.user') }}"><span class="c-sidebar-nav-icon"></span> Manage</a></li>
+        </ul>
+    </li>
+    <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+        <svg class="c-sidebar-nav-icon">
+            <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
+        </svg> Inventory</a>
+    <ul class="c-sidebar-nav-dropdown-items">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{ route('admin.inventory') }}"><span class="c-sidebar-nav-icon"></span> Manage</a></li>
+    </ul>
+</li>
     <!-- <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
             <svg class="c-sidebar-nav-icon">
                 <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-cursor"></use>
