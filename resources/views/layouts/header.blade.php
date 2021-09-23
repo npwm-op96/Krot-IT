@@ -34,7 +34,7 @@
 <div class="c-subheader justify-content-between px-3">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb my-0 ms-2">
-            {{ Breadcrumbs::render('user') }}
+       
         </ol>
     </nav>
     @yield('breadcrumb')
